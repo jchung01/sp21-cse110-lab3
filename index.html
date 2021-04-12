@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=”en”>
+<html lang="en">
     <head>
         <title>James's Journal</title>
         <meta charset="UTF-8">
@@ -17,6 +17,7 @@
                 <li><a href="#journal1">Journal 4/9</a></li>
                 <li><a href="#journal2">Journal 4/10</a></li>
                 <li><a href="#journal3">Journal 4/11</a></li>
+                <li><a href="#new-entry">New Journal Entry</a></li>
             </ol>
         </nav>
 
@@ -43,7 +44,8 @@
                     <li>Finish that PA.</li>
                     <li>Look into software project details.</li>
                 </ul>
-                <hr><p>
+                <hr>
+                <p>
                     Now, a poem for my coding struggles:<br>
                     <blockquote>Roses are red,<br>
                     Violets are blue,<br>
@@ -52,7 +54,7 @@
                     <div>(Insert groan about code puns here)</div>
                 </p>
             </section>
-            <!-- Spacer to give menu some visible functionality. -->
+            <!-- Spacer -->
             <span style="display:block; height: 150px;"></span>
 
             <section>
@@ -62,19 +64,19 @@
                     <li>Met with software team members.</li>
                     <li>Played skribbl.io with team members.</li>
                     <li>Helped my friend build a new PC!</li>
-                    <details>
-                        <summary>PC parts</summary>
-                        <ul>
-                            <li>CPU: Intel i7 9700K</li>
-                            <li>GPU: Nvidia RTX 2080</li>
-                            <li>RAM: 2x8GB </li>
-                            <li>Case: Fractal Meshify C</li>
-                            <li>PSU: Some 750W unit</li>
-                            <li>CPU cooler: NZXT Kraken X60 AIO</li>
-                            <li>and some other parts that I don't know the exact specs of</li>
-                        </ul>
-                    </details>
                 </ul>
+                <details>
+                    <summary>PC parts</summary>
+                    <ul>
+                        <li>CPU: Intel i7 9700K</li>
+                        <li>GPU: Nvidia RTX 2080</li>
+                        <li>RAM: 2x8GB </li>
+                        <li>Case: Fractal Meshify C</li>
+                        <li>PSU: Some 750W unit</li>
+                        <li>CPU cooler: NZXT Kraken X60 AIO</li>
+                        <li>and some other parts that I don't know the exact specs of</li>
+                    </ul>
+                </details>
                 <h4> Lowlights</h4>
                 <ul>
                     <li>Spent so much time trying to fix a problem when building the PC
@@ -89,14 +91,17 @@
                 <h4> Highlights</h4>
                 <ul>
                     <li>Overheard this throwback being played by someone on the piano (<i>Shelter</i> by Porter Robinson)<br>
-                        <audio controls src=./resources/Shelter.m4a type="audio/x-m4a"></audio>
+                        <audio controls="controls">
+                            <source src=./resources/Shelter.m4a type="audio/x-m4a">
+                        </audio> 
                     </li>
                 </ul>
                 <h4> Lowlights</h4>
                 <ul>
                     <li>After getting back, so much homework...</li>
                     <li>Why is it always so hot?! Why can't it like rain or hail or something like that one time: <br> 
-                        <img src=./resources/hail.jpeg width="200px" height=auto></li>
+                        <img src=./resources/hail.jpeg width="200" height="267" 
+                            alt="hail in a parking lot"></li>
                 </ul>
                 <h4> To-do</h4>
                 <ul>
@@ -104,7 +109,7 @@
                 </ul>
             </section>
             <span style="display:block; height: 150px;"></span>
-            <h2>Create a new journal entry</h2>
+            <h2 id="new-entry">Create a new journal entry</h2>
             <form>
                 <fieldset>
                     <legend>Journal Entry</legend>
@@ -122,7 +127,7 @@
                         use [Title] and [Date] to include entry title or date):</label> <br>
                     <input list="default-formats" id="entry-title-format" 
                         name="title format">
-                    <datalist id="default-formats" name="title-format">
+                    <datalist id="default-formats">
                         <option value="[Title], [Date]"></option>
                         <option value="[Date], [Title]"></option>
                     </datalist> <br> <br>
@@ -138,7 +143,7 @@
                         <option value="courierN">Courier New</option>
                         <option value="georgia">Georgia</option>
                     </select> <br> <br>
-                    <label for="entry-align">Text alignment:</label>
+                    <p>Text alignment:</p>
                     <div>
                         <label for=align-left> Align left</label>
                         <input type="radio" id="align-left" name="align" value="left" checked>
