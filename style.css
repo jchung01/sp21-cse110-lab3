@@ -1,0 +1,11 @@
+/* Here's the style for the rest of the page. */
+@media only screen and (max-width: 1000px) {
+    body{
+        background-color: #babe79
+    }
+}
+@media (max-width: 2000px){
+    body{
+        background-color: #9999a8
+    }
+}
