@@ -20,16 +20,18 @@ header {
 }
 .menu ol {
     display: flex;
+    position: fixed;
+    top: 1px;
+    right: 0%;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-start;
-    padding-bottom: .5cm;
+    justify-content: flex-end;
+    padding-bottom: .1cm;
     background: oldlace;
     margin: auto;
 }
 
 .menu ol li {
-    padding-left: 1cm;
     padding-right: 1cm;
 }
 
