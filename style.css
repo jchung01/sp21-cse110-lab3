@@ -74,6 +74,10 @@ li.to-do {
     grid-column-end: 5;
 }
 
+/* style that applies to Journal3 */
+
+/* none for now, li.to-do taken care of in journal1 as well */
+
 /* style that applies to form */
 button:hover {
     background-color: hsl(210, 100%, 91%)
