@@ -1,0 +1,93 @@
+/* style that applies to the whole page */
+@media only screen and (max-width: 1200px) and (min-width: 500px) {
+    body{
+        background-color: #babe79;
+    }
+}
+@media (max-width: 2000px){
+    body{
+        background-color: #9999a8
+    }
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* style that applies to anything that is not a journal (nav, etc.) at beginning */
+header {
+    text-align: center;
+}
+.menu ol {
+    display: flex;
+    position: fixed;
+    top: 1px;
+    right: 0%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-bottom: .1cm;
+    background: oldlace;
+    margin: auto;
+}
+
+.menu ol li {
+    padding-right: 1cm;
+}
+
+/* style that applies to Journal1 */
+#journal1 {
+    color:blue;
+}
+blockquote {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5%;
+    padding: 5px 0px 5px 9px;
+	margin: 0px 12.5in 0px 2em;
+    text-decoration: underline;
+    color: rgb(153, 51, 153);
+}
+
+li.to-do {
+    color:rgb(187, 33, 33);
+}
+
+#low1 {
+    position: sticky;
+    top: 10px;
+}
+
+/* style that applies to form */
+button:hover {
+    background-color: hsl(210, 100%, 91%)
+}
+
+#font-default ~ option {
+    color: goldenrod;
+}
+
+#align-left + label {
+    color: greenyellow;
+}
+#align-center + label{
+    color: skyblue;
+}
+
+/* style that applies to anything that is not a journal (nav, etc.) at end */
+footer {
+    border-style: solid;
+    border-width: 2px;
+    width: 100ex;
+    height: 22ex;
+    margin-top: 3ex;
+}
+
+#mail-warning {
+    display: none;
+}
+
+#mail:active > p{
+    display: block;
+}
