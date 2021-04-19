@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Journal for Lab 2">
         <link rel="icon" href="./resources/journal.jpg">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css2?family=Roboto', rel="stylesheet", type='text/css'>
+        <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <header>
@@ -24,25 +27,28 @@
         <main id="main-content">
             <h2>Journal Entries (4/9-4/11)</h2>
             <section>
+                <!-- Inline CSS -->
                 <h3 id="journal1">4/9/2021</h3>
                 <h4> Highlights</h4>
                 <ul>
                     <li>Went to eat some good food with a friend.</li>
                 </ul>
-                <h4> Lowlights</h4>
-                <ul>
-                    <li>These crows were so loud, they woke me up... <br>
-                        <video controls width="250">
-                            <source src="./resources/crows.webm"
-                                type="video/webm">
-                        </video>
-                    </li>
-                    <li>Bugs in my code everywhere!</li>
-                </ul>
+                <div>
+                    <h4 id="low1"> Lowlights</h4>
+                    <ul>
+                        <li>These crows were so loud, they woke me up... <br>
+                            <video controls width="250">
+                                <source src="./resources/crows.webm"
+                                    type="video/webm">
+                            </video>
+                        </li>
+                        <li>Bugs in my code everywhere!</li>
+                    </ul>
+                </div>
                 <h4> To-do</h4>
                 <ul>
-                    <li>Finish that PA.</li>
-                    <li>Look into software project details.</li>
+                    <li class=to-do>Finish that PA.</li>
+                    <li class=to-do>Look into software project details.</li>
                 </ul>
                 <hr>
                 <p>Now, a poem for my coding struggles:</p>
@@ -57,7 +63,7 @@
             <span style="display:block; height: 150px;"></span>
 
             <section>
-                <h3 id="journal2">4/10/2021</h3>
+                <h3 id="journal2" style=color:green>4/10/2021</h3>
                 <h4> Highlights</h4>
                 <ul>
                     <li>Met with software team members.</li>
@@ -86,7 +92,7 @@
             <span style="display:block; height: 150px;"></span>
 
             <section>
-                <h3 id="journal3">4/11/2021</h3>
+                <h3 id="journal3" style=color:red>4/11/2021</h3>
                 <h4> Highlights</h4>
                 <ul>
                     <li>Overheard this throwback being played by someone on the piano (<i>Shelter</i> by Porter Robinson)<br>
@@ -136,7 +142,7 @@
 
                     <label for="entry-font">Font:</label>
                     <select name="font" id="entry-font">
-                        <option value="">--Please choose a font--</option>
+                        <option id="font-default" value="">--Please choose a font--</option>
                         <option value="timesNR">Times New Roman</option>
                         <option value="arial">Arial</option>
                         <option value="courierN">Courier New</option>
@@ -146,12 +152,8 @@
                     <div>
                         <label for=align-left> Align left</label>
                         <input type="radio" id="align-left" name="align" value="left" checked>
-                    </div>
-                    <div>
                         <label for=align-center> Align center</label>
                         <input type="radio" id="align-center" name="align" value="center">
-                    </div>
-                    <div>
                         <label for=align-right> Align right</label>
                         <input type="radio" id="align-right" name="align" value="right">
                     </div> <br>
@@ -166,11 +168,13 @@
 
         <footer>
             <p>Author: James Chung </p>
-            <a href="mailto:j3chung@ucsd.edu">Contact Author</a>
+            <a id="mail" href="mailto:j3chung@ucsd.edu">Contact Author
+                <p id="mail-warning"><b>You probably shouldn't actually email me anything, 
+                    this is just a test creation for HTML.
+                </b></p>
+            </a>
+            <a>--</a>
             <a href="https://github.com/jchung01/Lab2" target="_blank">Source</a>
-            <p><b>You probably shouldn't actually email me anything, 
-                this is just a test creation for HTML.
-            </b></p>
             <p><i>Journal entries contain mostly real events,
                  but that doesn't mean they <strong>actually</strong> happened on that day or even at all. </i></p>
         </footer>
