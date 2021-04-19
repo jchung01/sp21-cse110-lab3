@@ -35,6 +35,30 @@ header {
     padding-right: 1cm;
 }
 
+/* style that applies to Journal1 */
+#journal1 {
+    color:blue;
+}
+blockquote {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5%;
+    padding: 5px 0px 5px 9px;
+	margin: 0px 12.5in 0px 2em;
+    text-decoration: underline;
+    color: rgb(153, 51, 153);
+}
+
+li.to-do {
+    color:rgb(187, 33, 33);
+}
+
+#low1 {
+    position: sticky;
+    top: 10px;
+}
+
 /* style that applies to form */
 button:hover {
     background-color: hsl(210, 100%, 91%)
