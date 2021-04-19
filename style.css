@@ -59,6 +59,21 @@ li.to-do {
     top: 10px;
 }
 
+/* style that applies to Journal2 */
+.grid-container{
+    display: inline-grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#cpu, #gpu, #case {
+    width: 175px;
+    height: auto;
+}
+.grid-item-case {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
 /* style that applies to form */
 button:hover {
     background-color: hsl(210, 100%, 91%)
@@ -82,6 +97,10 @@ footer {
     width: 100ex;
     height: 22ex;
     margin-top: 3ex;
+}
+
+a[href] {
+    color: rgb(255, 191, 107);
 }
 
 #mail-warning {
